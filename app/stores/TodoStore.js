@@ -42,7 +42,7 @@ const TodoStore = types
         const index = self.todos.findIndex(t => t.id === todo.id);
         self.todos[index] = todo;
       } catch (error) {
-        alert(e.message);
+        alert(error.message);
       }
       self.isFetching = false;
     }),
