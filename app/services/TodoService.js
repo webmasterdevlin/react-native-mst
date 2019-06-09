@@ -5,12 +5,8 @@ export async function getTodos() {
   return await axios.get(BaseUrl.todos);
 }
 
-export async function getTodoById(id) {
-  return await axios.get(`${BaseUrl.todos}${id}`);
-}
-
 export async function postTodo(newTodo) {
-  return await axios.post(BaseUrl.todos, newTodo);
+  return await axios.post(BaseUrl.todos + "21", newTodo);
 }
 
 export async function putTodo(todo) {

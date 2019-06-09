@@ -45,7 +45,7 @@ class TodoList extends Component {
     return (
       <Container>
         <Content scrollEnabled={true}>
-          {TodoStore.isFetching ? (
+          {TodoStore.isLoading ? (
             <Spinner color="blue" />
           ) : (
             TodoStore.todos.map(t => (
