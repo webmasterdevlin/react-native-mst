@@ -6,7 +6,7 @@ export async function getTodos() {
 }
 
 export async function postTodo(newTodo) {
-  return await axios.post(BaseUrl.todos + "21", newTodo);
+  return await axios.post(BaseUrl.todos, newTodo);
 }
 
 export async function putTodo(todo) {

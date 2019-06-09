@@ -1,4 +1,4 @@
-import { types, flow, destroy, revertPatch, getSnapshot, applySnapshot } from 'mobx-state-tree'
+import { types, flow, destroy, getSnapshot, applySnapshot } from 'mobx-state-tree'
 import { TodoType, TodoInitialState } from "../models/TodoType";
 import {
   getTodos,
