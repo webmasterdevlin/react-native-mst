@@ -10,7 +10,7 @@ import {
 const TodoModel = types.model("TodoModel", TodoType);
 const TodoStore = types
   .model("TodoStore", {
-    todos: types.maybeNull(types.array(TodoModel)),
+    todos: types.array(TodoModel),
     todo: types.maybeNull(TodoModel),
     isLoading: types.boolean
   })

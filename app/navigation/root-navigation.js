@@ -5,7 +5,7 @@ const MainNavigator = createStackNavigator({
   todoList: {
     screen: TodoList,
     navigationOptions: () => ({
-      title: "ChainReact19 - Mobx State Tree",
+      title: "Mobx State Tree",
       headerTintColor: "#F4F3EE",
       headerStyle: {
         backgroundColor: "#9C27B0"

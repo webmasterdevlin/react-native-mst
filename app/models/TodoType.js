@@ -1,9 +1,12 @@
 import { types } from "mobx-state-tree";
 
 export const TodoType = {
-  id: types.optional(types.identifier, ""),
-  isDone: false
-  // and the rest...
+  id: types.identifier,
+  isDone: types.optional(types.boolean, false)
 };
 
+export const TodoInitialState = {
+  id:"",
+  isDone: false
+};
 export const TodoInitialState = {};
